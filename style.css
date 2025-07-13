@@ -1,0 +1,50 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F7E9CC;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+h1 {
+    text-align: center;
+    color: #DFAAB2;
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+}
+.semester {
+    background-color: #F5DADF;
+    border-radius: 10px;
+    padding: 15px;
+    min-width: 250px;
+    flex-shrink: 0;
+}
+.semester.locked {
+    background-color: #ddd;
+    pointer-events: none;
+    opacity: 0.5;
+}
+.semester h2 {
+    text-align: center;
+    background-color: #F8C7CA;
+    border-radius: 5px;
+    padding: 5px;
+}
+.subject {
+    margin: 8px 0;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+.subject:hover {
+    background-color: #F8C7CA;
+}
+.subject.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
